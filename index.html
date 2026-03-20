@@ -11,7 +11,18 @@
 * {
   max-width: 100%;
   box-sizing: border-box;
-  word-break: break-word;
+  .contact-item a,
+.contact-item span {
+  overflow-wrap: anywhere;
+  word-break: normal;
+    .contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+    .contact-item {
+  min-width: 0;
+  padding: 20px;
 }
 
 html, body {
