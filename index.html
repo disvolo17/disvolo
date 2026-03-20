@@ -661,6 +661,30 @@ div, span {
                 width: 100%;
             }
         }
+    .container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-content {
+  padding: 60px 40px !important;
+  min-width: 0;
+}
+
+.sidebar {
+  min-width: 0;
+}
+
+/* фикс для grid */
+.container > * {
+  min-width: 0;
+}
+
+/* чтобы ничего не вылазило */
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
     </style>
 <base target="_blank">
 </head>
