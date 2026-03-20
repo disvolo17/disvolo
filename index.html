@@ -499,6 +499,25 @@ div, span {
         }
 
         /* Contacts Section - Full Width at Bottom */
+        .contacts,
+.contact,
+.contact-item {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.contacts a,
+.contact a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* если используется flex */
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
         .contacts-section {
             background: var(--secondary);
             padding: 40px;
